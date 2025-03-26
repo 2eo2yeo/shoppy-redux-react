@@ -1,8 +1,5 @@
-import React, { useEffect, useRef, useState, useContext } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useSearchParams, useNavigate } from "react-router-dom";
-import { useOrder } from '../hooks/useOrder.js';
-import { useCart } from '../hooks/useCart.js';
-import { AuthContext } from "../auth/AuthContext.js";
 import { useSelector, useDispatch } from "react-redux";
 import { saveToOrder } from '../services/orderApi.js'
 import { clearCart } from '../services/cartApi.js'

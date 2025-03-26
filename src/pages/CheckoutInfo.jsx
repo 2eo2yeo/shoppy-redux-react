@@ -2,10 +2,6 @@ import "../styles/cart.css";
 import "../styles/checkoutinfo.css";
 import React, { useState, useEffect, useContext, useRef } from "react";
 import DaumPostcode from "react-daum-postcode";
-import { useOrder } from '../hooks/useOrder.js';
-import { AuthContext } from '../auth/AuthContext.js';
-// import { OrderContext } from "../context/OrderContext.js";
-import { CartContext } from "../context/CartContext.js";
 import { useSelector, useDispatch } from "react-redux";
 import { getOrderList, paymentKakaoPay } from '../services/orderApi.js'
 
